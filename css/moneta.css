@@ -237,11 +237,11 @@ a    { text-decoration: none; color: inherit; }
 
 /* ── Trust Badges ────────────────────────────────────────── */
 .hero__trust {
-  display: flex; align-items: center; gap: 28px;
+  display: flex; align-items: center; gap: 18px;
   margin-top: 44px;
   padding-top: 32px;
   border-top: 1px solid var(--border);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .trust-badge {
   display: flex; align-items: center; gap: 10px;
