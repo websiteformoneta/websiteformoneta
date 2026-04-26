@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moneta — Cloud Reseller Billing Infrastructure</title>
+  <meta name="description" content="moneta is the billing infrastructure for AWS and Azure resellers, aligning cost, pricing, and discounts across every customer account." />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="css/moneta.css?v=12" />
+</head>
+<body>
+
+<!-- ── Nav ─────────────────────────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Moneta home">
+      <svg class="nav__logo-cloud" viewBox="0 0 32 22" fill="none" aria-hidden="true">
+        <path d="M26 18H8a6 6 0 1 1 .8-11.94A7 7 0 1 1 26 10v.06A4 4 0 1 1 26 18z" fill="#3b9ae0"/>
+      </svg>
+      <span class="nav__logo-text">moneta</span>
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="platform.html"        class="nav__link">Platform</a></li>
+      <li><a href="finops-services.html" class="nav__link">Cloud FinOps</a></li>
+      <li><a href="why-moneta.html"      class="nav__link">Why Moneta</a></li>
+      <li><a href="#contact"             class="nav__cta">Book a Demo &rarr;</a></li>
+    </ul>
+    <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile-menu" id="mobile-menu" role="menu">
+    <a href="index.html"           class="nav__mobile-link">Home</a>
+    <a href="platform.html"        class="nav__mobile-link">Platform</a>
+    <a href="finops-services.html" class="nav__mobile-link">Cloud FinOps</a>
+    <a href="why-moneta.html"      class="nav__mobile-link">Why Moneta</a>
+    <a href="#contact"             class="nav__mobile-cta">Book a Demo</a>
+  </div>
+</nav>
+
+<!-- ── Signal Strip ─────────────────────────────────────── -->
+<div class="signal-strip" aria-hidden="true">
+  <div class="signal-strip__track">
+    <span class="signal-strip__item">Billing, Pricing &amp; Margin in One System</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Built for AWS &amp; Azure Resellers</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">$100M+ Annual Cloud Spend Managed</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Eliminate Margin Loss</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Accurate, Automated Customer Invoicing</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Margin Visibility Without Manual Reconciliation</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Capture More Discounts</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Cloud FinOps as a Managed Service</span><span class="signal-strip__sep">◆</span>
+    <!-- duplicate for seamless loop -->
+    <span class="signal-strip__item">Billing, Pricing &amp; Margin in One System</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Built for AWS &amp; Azure Resellers</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">$100M+ Annual Cloud Spend Managed</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Eliminate Margin Loss</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Accurate, Automated Customer Invoicing</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Margin Visibility Without Manual Reconciliation</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Capture More Discounts</span><span class="signal-strip__sep">◆</span>
+    <span class="signal-strip__item">Cloud FinOps as a Managed Service</span><span class="signal-strip__sep">◆</span>
+  </div>
+</div>
+
+<!-- ── Hero ─────────────────────────────────────────────── -->
+<section class="hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="container">
+    <div class="hero__split">
+
+      <!-- Left: Text -->
+      <div class="hero__text">
+        <div class="hero__eyebrow animate-fade-up">Cloud Reseller Billing Infrastructure</div>
+        <h1 class="animate-fade-up delay-1">
+          Eliminate Margin Loss in <span class="text-orange">Cloud Reseller Billing</span>
+        </h1>
+        <div class="hero__platform-line animate-fade-up delay-2">
+          <span class="hero__platform-dot"></span>
+          The operating system for cloud reseller billing
+        </div>
+        <p class="hero__sub animate-fade-up delay-2">
+          moneta aligns cost, pricing, and discounts across every customer account to ensure
+          accurate invoicing and full margin visibility.
+        </p>
+        <div class="hero__cta-group animate-fade-up delay-3">
+          <a href="#contact" class="btn btn--primary">See Your Margin Gaps &rarr;</a>
+          <span class="hero__credibility">Trusted by AWS &amp; Azure resellers managing $100M+ in annual cloud spend</span>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="hero__trust animate-fade-up delay-3">
+          <div class="trust-badge">
+            <div class="trust-badge__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <path d="M16 4 C8 4 4 10 4 16 C4 22 8 28 16 28 C24 28 28 22 28 16"/>
+                <path d="M22 4 L28 4 L28 10"/>
+                <path d="M16 10 L28 4"/>
+              </svg>
+            </div>
+            <div class="trust-badge__text">
+              $100M+
+              <span>processed annually</span>
+            </div>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-badge trust-badge--aws">
+            <div class="trust-badge__text">aws</div>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-badge trust-badge--azure">
+            <div class="trust-badge__text">Microsoft Azure</div>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-badge">
+            <div class="trust-badge__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <polygon points="16,4 19,12 28,12 21,17 24,26 16,21 8,26 11,17 4,12 13,12"/>
+              </svg>
+            </div>
+            <div class="trust-badge__text">
+              Purpose-built
+              <span>for Cloud Resellers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: System Diagram -->
+      <div class="hero__diagram animate-fade-up delay-2" aria-label="moneta operating system architecture">
+        <div class="sys-diagram">
+          <!-- Header -->
+          <div class="sys-diagram__header">
+            <span class="sys-diagram__title">moneta operating system</span>
+          </div>
+
+          <!-- Body: 3-column grid -->
+          <div class="sys-diagram__body">
+
+            <!-- INPUTS -->
+            <div>
+              <div class="sys-diag-col-label">Inputs</div>
+
+              <div class="sys-diag-io-item">
+                <div class="sys-diag-io-icon">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                    <rect x="2" y="9" width="2.5" height="5"/><rect x="6.5" y="6" width="2.5" height="8"/>
+                    <rect x="11" y="3" width="2.5" height="11"/><line x1="1" y1="14" x2="15" y2="14"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="sys-diag-io-name">Usage Data</div>
+                  <div class="sys-diag-io-sub">Real-time</div>
+                </div>
+              </div>
+
+              <div class="sys-diag-io-item">
+                <div class="sys-diag-io-icon">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                    <path d="M3 3h5l5 5-4 4L3 7z"/><circle cx="7" cy="5" r="1" fill="currentColor" stroke="none"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="sys-diag-io-name">Vendor Pricing</div>
+                  <div class="sys-diag-io-sub">AWS, Azure</div>
+                </div>
+              </div>
+
+              <div class="sys-diag-io-item">
+                <div class="sys-diag-io-icon">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                    <rect x="3" y="2" width="10" height="12" rx="1"/>
+                    <line x1="5" y1="6" x2="11" y2="6"/><line x1="5" y1="9" x2="11" y2="9"/>
+                    <line x1="5" y1="12" x2="8" y2="12"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="sys-diag-io-name">Contracts</div>
+                  <div class="sys-diag-io-sub">Agreements</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CORE LAYERS -->
+            <div>
+              <div class="sys-diag-col-label">Core Engine</div>
+
+              <div class="sys-diag-core-item">
+                <div class="sys-diag-core-name">Pricing Logic</div>
+                <div class="sys-diag-core-sub">Pricing rules that adapt</div>
+              </div>
+
+              <div class="sys-diag-core-item">
+                <div class="sys-diag-core-name">Discount Engine</div>
+                <div class="sys-diag-core-sub">Automated discounts</div>
+              </div>
+
+              <div class="sys-diag-core-item">
+                <div class="sys-diag-core-name">Billing System</div>
+                <div class="sys-diag-core-sub">Accurate, Automated, Aligned</div>
+              </div>
+
+              <div class="sys-diag-core-item sys-diag-core-item--hl">
+                <div class="sys-diag-core-name">Margin Intelligence Layer</div>
+                <div class="sys-diag-core-sub">Real-time margin visibility</div>
+              </div>
+            </div>
+
+            <!-- OUTPUTS -->
+            <div>
+              <div class="sys-diag-col-label">Outputs</div>
+
+              <div class="sys-diag-io-item">
+                <div class="sys-diag-io-icon" style="color:var(--teal);">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                    <rect x="2" y="2" width="12" height="14" rx="1"/>
+                    <line x1="5" y1="6" x2="11" y2="6"/><line x1="5" y1="9" x2="11" y2="9"/>
+                    <line x1="5" y1="12" x2="8" y2="12"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="sys-diag-io-name">Invoices</div>
+                  <div class="sys-diag-io-sub">Accurate</div>
+                </div>
+              </div>
+
+              <div class="sys-diag-io-item">
+                <div class="sys-diag-io-icon" style="color:var(--teal);">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                    <polyline points="2,12 5,7 9,9 14,3"/>
+                    <polyline points="11,3 14,3 14,6"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="sys-diag-io-name">Margin Intelligence</div>
+                  <div class="sys-diag-io-sub">Actionable</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="sys-diagram__controls">
+            <div class="sys-diag-ctrl-label">Controls</div>
+            <div class="sys-diag-ctrl-items">
+              <div class="sys-diag-ctrl-item">
+                <span class="sys-diag-ctrl-name">Margin Rules</span>
+                <span class="sys-diag-ctrl-badge">Active</span>
+              </div>
+              <div class="sys-diag-ctrl-item">
+                <span class="sys-diag-ctrl-name">Discount Policies</span>
+                <span class="sys-diag-ctrl-badge">Enforced</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /hero__diagram -->
+
+    </div><!-- /hero__split -->
+  </div>
+</section>
+
+<!-- ── The Problem ───────────────────────────────────────── -->
+<section class="section section--alt" id="problem">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label section-label--orange">The Problem</span>
+      <h2>Margin Loss Is Built Into Cloud Reseller Billing</h2>
+      <p>AWS and Azure resellers operate across multiple customers, pricing models, and layered discount programs. Billing, pricing, and cost are rarely aligned, resulting in margin loss across customer accounts.</p>
+      <p style="margin-top:12px">Without infrastructure built for cloud resale operations, billing becomes manual, discounts are inconsistently applied, and margins cannot be reliably measured or controlled.</p>
+    </div>
+    <div class="problem-list reveal">
+      <div class="problem-item"><span class="problem-icon"></span><p>Discount programs are difficult to track and inconsistently applied</p></div>
+      <div class="problem-item"><span class="problem-icon"></span><p>Customer pricing is disconnected from actual cloud costs</p></div>
+      <div class="problem-item"><span class="problem-icon"></span><p>Billing relies on spreadsheets and manual reconciliation</p></div>
+      <div class="problem-item"><span class="problem-icon"></span><p>Misapplied discounts and pricing gaps reduce margins</p></div>
+      <div class="problem-item"><span class="problem-icon"></span><p>Limited visibility into margin performance by customer</p></div>
+    </div>
+    <p class="closing-line reveal">Margin loss is not isolated. It compounds across every customer account.</p>
+  </div>
+</section>
+
+<!-- ── The Solution ──────────────────────────────────────── -->
+<section class="section section--bright" id="solution">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">The Solution</span>
+      <h2>Billing, Pricing, and Margin in One System</h2>
+      <p>moneta is the billing infrastructure for AWS and Azure resellers, aligning billing, pricing, and discounts in a single system. Invoices are accurate, discounts are correctly applied, and margin performance is visible across every customer account.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <rect x="5" y="3" width="18" height="22" rx="1"/><line x1="9" y1="9" x2="19" y2="9"/><line x1="9" y1="13" x2="19" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/>
+          </svg>
+        </div>
+        <h3>Accurate, Automated Customer Invoicing</h3>
+        <p>Generate consistent, customer-ready invoice data aligned with your pricing strategy. Billing is automated, repeatable, and accurate across every customer account.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M5 5h8l10 10-8 8L5 13z"/><circle cx="13" cy="10" r="1.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <h3>Cloud Discount Program Management</h3>
+        <p>Identify and apply cloud discount programs across every customer account. Available savings are captured and correctly reflected in both cost and pricing.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <rect x="4" y="16" width="5" height="8"/><rect x="12" y="11" width="5" height="13"/><rect x="20" y="6" width="5" height="18"/>
+            <line x1="2" y1="24" x2="26" y2="24"/>
+          </svg>
+        </div>
+        <h3>Margin Visibility by Customer</h3>
+        <p>Track margin performance across every customer account with clear, reliable reporting. Identify where margins are strong, where they are eroding, and where pricing adjustments are required.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="14,3 17,11 26,11 19,16 22,24 14,19 6,24 9,16 2,11 11,11"/>
+          </svg>
+        </div>
+        <h3>Pricing Advantage</h3>
+        <p>Use cost, discount, and margin visibility to set competitive pricing, protect margins, and support long-term customer growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Metrics Strip ─────────────────────────────────────── -->
+<div class="metrics-strip reveal">
+  <div class="metrics-inner">
+    <div class="metric-item">
+      <div class="metric-value">$100M+</div>
+      <div class="metric-label">Annual cloud spend managed by resellers using moneta</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-value">100s</div>
+      <div class="metric-label">Customer invoices generated monthly</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-value">AWS &amp; Azure</div>
+      <div class="metric-label">Complex pricing handled automatically</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Managed Service ───────────────────────────────────── -->
+<section class="section section--alt" id="finops">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label section-label--muted">Managed Service</span>
+      <h2>Deliver Cloud FinOps as a Managed Service</h2>
+      <p>Cloud resellers are increasingly expected to help customers manage and optimize cloud spending. moneta provides the billing, pricing, and discount data required to deliver Cloud FinOps as an ongoing managed service.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="12" cy="12" r="7"/><line x1="17" y1="17" x2="24" y2="24"/>
+          </svg>
+        </div>
+        <h3>Customer Cloud Cost Visibility</h3>
+        <p>Provide customers with reporting that explains the drivers behind cloud spend, how it changes over time, and how costs should be allocated across cost centers.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <polyline points="3,8 10,16 16,12 25,20"/><polyline points="20,20 25,20 25,15"/>
+          </svg>
+        </div>
+        <h3>Lower Customer Cloud Rates</h3>
+        <p>Show how cloud discount programs impact spend and where savings opportunities exist to improve cost efficiency.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <rect x="4" y="12" width="8" height="12"/><rect x="16" y="4" width="8" height="20"/>
+            <line x1="2" y1="24" x2="26" y2="24"/>
+          </svg>
+        </div>
+        <h3>Cost-Efficient Cloud Infrastructure</h3>
+        <p>Identify opportunities to improve resource utilization, reduce waste, and optimize customer cloud environments.</p>
+      </div>
+    </div>
+    <p class="closing-line reveal">moneta enables cloud resellers to turn cloud financial management into a differentiated managed service that strengthens customer relationships and generates recurring services revenue.</p>
+  </div>
+</section>
+
+<!-- ── Why Moneta ─────────────────────────────────────────── -->
+<section class="section section--bright" id="why">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Why Moneta</span>
+      <h2>Why Cloud Resellers Choose moneta</h2>
+      <p>moneta is purpose-built for AWS and Azure resellers managing complex billing, pricing, and margin operations at scale.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="14" cy="14" r="11"/><circle cx="14" cy="14" r="5"/><circle cx="14" cy="14" r="1.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <h4>Built Specifically for Cloud Reseller Operations</h4>
+        <p>moneta is purpose-built for AWS and Azure resellers, not adapted from generic billing or FinOps tools. Every workflow is built around cloud resale pricing models, discount structures, and customer agreements.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M5 14a9 9 0 1 1 18 0"/><polyline points="14,5 14,14 19,14"/>
+          </svg>
+        </div>
+        <h4>Not Another FinOps Tool</h4>
+        <p>Traditional FinOps tools focus on helping companies analyze their own cloud spend. They are not designed to handle reseller billing, customer pricing, or margin management across multiple customer accounts.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <polyline points="4,14 10,20 24,8"/>
+          </svg>
+        </div>
+        <h4>Accurate Billing Across Complex Pricing Models</h4>
+        <p>moneta handles the complexity of cloud pricing, customer-specific agreements, and discount programs to ensure invoices are accurate and consistent across every customer account.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <rect x="3" y="7" width="22" height="14" rx="1"/>
+            <line x1="8" y1="12" x2="20" y2="12"/><line x1="8" y1="16" x2="16" y2="16"/>
+          </svg>
+        </div>
+        <h4>Margin Visibility Without Manual Reconciliation</h4>
+        <p>moneta provides clear visibility into margins by customer without relying on spreadsheets or manual reconciliation, giving resellers confidence in their profitability.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M5 5h8l10 10-8 8L5 13z"/>
+            <path d="M9 9l2 2"/><circle cx="9" cy="9" r="1.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <h4>Capture More Discounts and Reduce Missed Savings</h4>
+        <p>moneta helps resellers identify and apply available cloud discount programs while highlighting missed savings opportunities across customer environments.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <polyline points="4,20 10,12 16,16 24,6"/>
+            <polyline points="20,6 24,6 24,10"/>
+          </svg>
+        </div>
+        <h4>Built to Scale with Your Cloud Business</h4>
+        <p>As cloud spend and customer complexity grow, moneta scales with your operations — supporting more customers, more pricing models, and higher billing volumes without increasing operational overhead.</p>
+      </div>
+    </div>
+    <p class="closing-line reveal">moneta gives cloud resellers the infrastructure needed to operate efficiently, compete on pricing, and grow their cloud business with confidence.</p>
+  </div>
+</section>
+
+<!-- ── Outcomes ──────────────────────────────────────────── -->
+<section class="section section--alt" id="results">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <span class="section-label">Results</span>
+      <h2>Real Outcomes for Cloud Resellers Using moneta</h2>
+      <p>moneta helps cloud resellers move from manual billing and unclear margins to automated operations, accurate pricing, and profitability growth.</p>
+    </div>
+    <div class="outcome-grid">
+      <div class="outcome-card reveal">
+        <div class="outcome-arrow">From Unknown Margins</div>
+        <h3>Clear Profitability</h3>
+        <p>Resellers gain immediate visibility into margin performance by customer, allowing them to identify underperforming accounts and take corrective action.</p>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-arrow">From Manual Billing</div>
+        <h3>Automated, Accurate Invoicing</h3>
+        <p>Billing processes that once required spreadsheets and manual reconciliation become automated, reducing errors and eliminating rework.</p>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-arrow">From Missed Discounts</div>
+        <h3>Captured Savings</h3>
+        <p>Resellers uncover previously missed discount opportunities and ensure discount programs are correctly applied across every customer.</p>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-arrow">From Reactive Pricing</div>
+        <h3>Competitive Advantage</h3>
+        <p>With clear cost and margin visibility, resellers set competitive pricing to win new business, protect margins, and expand customer accounts over time.</p>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-arrow">From Operational Bottlenecks</div>
+        <h3>Scalable Growth</h3>
+        <p>Teams can support more customers, more complex pricing models, and higher billing volumes without increasing operational overhead.</p>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-arrow">From Ad Hoc Cost Reviews</div>
+        <h3>Scalable FinOps Services</h3>
+        <p>Resellers move from one-off cost analysis to delivering structured, repeatable Cloud FinOps services that strengthen customer relationships and create new recurring revenue streams.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Transform Panel ───────────────────────────────────── -->
+<div class="transform-panel">
+  <div class="container">
+    <div class="transform-panel__header reveal">
+      <span class="section-label section-label--muted">The Transformation</span>
+      <h2>Before &amp; After moneta</h2>
+      <p>What changes when cloud resellers move to purpose-built billing infrastructure.</p>
+    </div>
+    <div class="transform-list reveal">
+      <div class="transform-row"><div class="transform-row__before-text"><span class="transform-row__tag transform-row__tag--before">Before</span><span class="transform-row__name">Unknown Margins</span></div><span class="transform-row__mid">→</span><div class="transform-row__after-text"><span class="transform-row__tag transform-row__tag--after">After</span><span class="transform-row__name">Clear Profitability</span></div></div>
+      <div class="transform-row"><div class="transform-row__before-text"><span class="transform-row__tag transform-row__tag--before">Before</span><span class="transform-row__name">Manual Billing</span></div><span class="transform-row__mid">→</span><div class="transform-row__after-text"><span class="transform-row__tag transform-row__tag--after">After</span><span class="transform-row__name">Automated, Accurate Invoicing</span></div></div>
+      <div class="transform-row"><div class="transform-row__before-text"><span class="transform-row__tag transform-row__tag--before">Before</span><span class="transform-row__name">Missed Discounts</span></div><span class="transform-row__mid">→</span><div class="transform-row__after-text"><span class="transform-row__tag transform-row__tag--after">After</span><span class="transform-row__name">Captured Savings</span></div></div>
+      <div class="transform-row"><div class="transform-row__before-text"><span class="transform-row__tag transform-row__tag--before">Before</span><span class="transform-row__name">Reactive Pricing</span></div><span class="transform-row__mid">→</span><div class="transform-row__after-text"><span class="transform-row__tag transform-row__tag--after">After</span><span class="transform-row__name">Competitive Advantage</span></div></div>
+      <div class="transform-row"><div class="transform-row__before-text"><span class="transform-row__tag transform-row__tag--before">Before</span><span class="transform-row__name">Operational Bottlenecks</span></div><span class="transform-row__mid">→</span><div class="transform-row__after-text"><span class="transform-row__tag transform-row__tag--after">After</span><span class="transform-row__name">Scalable Growth</span></div></div>
+      <div class="transform-row"><div class="transform-row__before-text"><span class="transform-row__tag transform-row__tag--before">Before</span><span class="transform-row__name">Ad Hoc Cost Reviews</span></div><span class="transform-row__mid">→</span><div class="transform-row__after-text"><span class="transform-row__tag transform-row__tag--after">After</span><span class="transform-row__name">Scalable FinOps Services</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Closing Statement ─────────────────────────────────── -->
+<section class="section section--surface" style="padding: 56px 0;">
+  <div class="container">
+    <p class="reveal" style="font-family: var(--fh); font-style: italic; font-weight: 500; font-size: clamp(1rem, 2vw, 1.15rem); color: var(--text-2); max-width: 780px; margin: 0 auto; line-height: 1.75; border-left: 2px solid var(--orange); padding-left: 24px; text-align: left;">
+      moneta turns cloud reseller billing from a manual, error-prone process into a system that improves margins, increases pricing competitiveness, and enables scalable growth.
+    </p>
+  </div>
+</section>
+
+<!-- ── CTA Banner ────────────────────────────────────────── -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Get Started</span>
+      <h2>Turn Cloud Reseller Billing Into a Competitive Advantage</h2>
+      <p>Talk to the moneta team about your billing, pricing, and margin operations.</p>
+      <a href="#contact" class="btn btn--primary">Review Your Billing, Pricing, and Margins &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo"><img src="assets/images/moneta-logo.png" alt="moneta" /></a>
+        <p>The billing infrastructure for AWS and Azure cloud resellers. Align cost, pricing, and discounts across every customer account.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Platform</h5>
+        <ul class="footer__links">
+          <li><a href="platform.html"         class="footer__link">Platform Overview</a></li>
+          <li><a href="platform.html#pillars" class="footer__link">Core Capabilities</a></li>
+          <li><a href="platform.html#how"     class="footer__link">How It Works</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Services</h5>
+        <ul class="footer__links">
+          <li><a href="finops-services.html"           class="footer__link">FinOps Services</a></li>
+          <li><a href="finops-services.html#deliver"   class="footer__link">What You Can Deliver</a></li>
+          <li><a href="finops-services.html#outcomes"  class="footer__link">Outcomes</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Company</h5>
+        <ul class="footer__links">
+          <li><a href="why-moneta.html"         class="footer__link">Why Moneta</a></li>
+          <li><a href="why-moneta.html#compare" class="footer__link">Comparison</a></li>
+          <li><a href="#contact"                class="footer__link">Book a Demo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; 2026 Moneta. All rights reserved.</span>
+      <span class="footer__tagline">Built for cloud resellers. Powered by precision.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Contact Modal ─────────────────────────────────────── -->
+<div class="contact-modal" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="contact-modal__backdrop"></div>
+  <div class="contact-modal__panel">
+    <button class="contact-modal__close" aria-label="Close">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <div class="contact-modal__body">
+      <div class="contact-modal__info">
+        <span class="section-label">Get Started</span>
+        <h2 id="modal-title">Review Your Billing, Pricing, and Margins</h2>
+        <p>Talk to the moneta team about your cloud resale operations. We'll help you identify billing gaps, missed discounts, and margin improvement opportunities.</p>
+        <ul class="contact-modal__trust">
+          <li>Trusted by AWS &amp; Azure resellers</li>
+          <li>$100M+ in annual cloud spend managed</li>
+          <li>Response within 1 business day</li>
+        </ul>
+      </div>
+      <div class="contact-modal__form-panel">
+        <form class="contact-form" id="modal-demo-form" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label" for="m-fn">First Name<span class="required">*</span></label><input class="form-input" type="text" id="m-fn" name="first_name" required /></div>
+            <div class="form-group"><label class="form-label" for="m-ln">Last Name<span class="required">*</span></label><input class="form-input" type="text" id="m-ln" name="last_name" required /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label" for="m-em">Business Email<span class="required">*</span></label><input class="form-input" type="email" id="m-em" name="email" required /></div>
+            <div class="form-group"><label class="form-label" for="m-ph">Phone<span class="required">*</span></label><input class="form-input" type="tel" id="m-ph" name="phone" required /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label" for="m-co">Company<span class="required">*</span></label><input class="form-input" type="text" id="m-co" name="company" required /></div>
+            <div class="form-group"><label class="form-label" for="m-ti">Title<span class="required">*</span></label><input class="form-input" type="text" id="m-ti" name="title" required /></div>
+          </div>
+          <div class="form-group"><label class="form-label" for="m-msg">Message<span class="required">*</span></label><textarea class="form-textarea" id="m-msg" name="message" required></textarea></div>
+          <button type="submit" class="form-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tweaks panel -->
+<div class="tweaks-panel" id="tweaks-panel"></div>
+
+<script src="js/moneta.js?v=3"></script>
+</body>
+</html>
