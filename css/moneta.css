@@ -229,7 +229,7 @@ a    { text-decoration: none; color: inherit; }
   font-size: 1rem; color: var(--text-2); max-width: 480px;
   line-height: 1.75; margin-bottom: 36px; font-weight: 400;
 }
-.hero__cta-group { display: flex; flex-direction: column; gap: 18px; }
+.hero__cta-group { display: flex; flex-direction: column; gap: 18px; align-items: flex-start; }
 .hero__credibility {
   font-family: var(--fm); font-size: 0.65rem; letter-spacing: 0.12em;
   color: var(--text-3); text-transform: uppercase;
@@ -245,30 +245,30 @@ a    { text-decoration: none; color: inherit; }
 }
 .trust-badge {
   display: flex; align-items: center; gap: 10px;
-  opacity: 0.7; transition: opacity 0.2s;
 }
-.trust-badge:hover { opacity: 1; }
 .trust-badge__icon {
-  width: 32px; height: 32px;
-  color: var(--text-2);
-  flex-shrink: 0;
+  width: 34px; height: 34px;
+  color: var(--blue); flex-shrink: 0;
 }
 .trust-badge__text {
   font-family: var(--fh); font-size: 0.78rem; font-weight: 700;
-  color: var(--text-2); letter-spacing: 0.01em;
-  line-height: 1.3;
+  color: var(--text-2); letter-spacing: 0.01em; line-height: 1.3;
 }
+.trust-badge--stat .trust-badge__text { color: var(--blue); }
 .trust-badge__text span {
-  display: block; font-family: var(--fm); font-size: 0.6rem;
-  font-weight: 400; letter-spacing: 0.08em; color: var(--text-3);
-  text-transform: uppercase;
+  display: block; font-family: var(--fm); font-size: 0.62rem;
+  font-weight: 400; letter-spacing: 0.03em; color: var(--text-3);
 }
+.trust-badge__text .blue {
+  color: var(--blue); font-family: var(--fh); font-weight: 700;
+  font-size: 0.78rem; letter-spacing: 0.01em;
+}
+.trust-badge--aws .trust-badge__aws-logo { width: 58px; height: 28px; flex-shrink: 0; }
+.trust-badge--azure .trust-badge__text { font-size: 0.85rem; letter-spacing: -0.01em; }
 .trust-divider {
   width: 1px; height: 28px; background: var(--border);
   flex-shrink: 0;
 }
-.trust-badge--aws .trust-badge__text,
-.trust-badge--azure .trust-badge__text { font-size: 1rem; letter-spacing: -0.01em; }
 
 /* ── System Diagram ─────────────────────────────────────── */
 .sys-diagram {
