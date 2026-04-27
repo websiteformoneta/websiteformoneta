@@ -599,6 +599,72 @@ p  { font-size: 0.9rem; color: var(--text-2); line-height: 1.75; }
 }
 .outcome-card h3 { font-size: 0.95rem; margin-bottom: 10px; }
 
+/* ── Logo Bar ───────────────────────────────────────────── */
+.logo-bar {
+  background: #0a1929;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 22px 0;
+}
+.logo-bar__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+.logo-bar__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.logo-bar__divider {
+  width: 1px;
+  height: 44px;
+  background: rgba(255,255,255,0.14);
+  flex-shrink: 0;
+}
+.logo-bar__icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.logo-bar__icon--azure { width: 34px; height: 34px; }
+.logo-bar__icon--laurel { width: 46px; height: 46px; }
+.logo-bar__aws { width: 74px; height: 37px; flex-shrink: 0; }
+.logo-bar__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+.logo-bar__headline {
+  font-family: var(--fh);
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #3b9ae0;
+  letter-spacing: -0.01em;
+}
+.logo-bar__sub {
+  font-family: var(--fm);
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.02em;
+}
+.logo-bar__azure-text {
+  font-family: var(--fh);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+@media (max-width: 700px) {
+  .logo-bar__inner { flex-wrap: wrap; gap: 20px; justify-content: center; }
+  .logo-bar__divider { display: none; }
+}
+
 /* ── Metrics Strip ──────────────────────────────────────── */
 .metrics-strip {
   background: var(--bg-card);
