@@ -263,8 +263,9 @@ a    { text-decoration: none; color: inherit; }
   color: var(--blue); font-family: var(--fh); font-weight: 700;
   font-size: 0.78rem; letter-spacing: 0.01em;
 }
-.trust-badge--aws .trust-badge__aws-logo { width: 58px; height: 28px; flex-shrink: 0; }
+.trust-badge--aws .trust-badge__aws-logo { width: 64px; height: 32px; flex-shrink: 0; }
 .trust-badge--azure .trust-badge__text { font-size: 0.85rem; letter-spacing: -0.01em; }
+.trust-badge__icon svg[viewBox="0 0 36 36"] { width: 36px; height: 36px; }
 .trust-divider {
   width: 1px; height: 28px; background: var(--border);
   flex-shrink: 0;
