@@ -636,6 +636,14 @@ p  { font-size: 0.9rem; color: var(--text-2); line-height: 1.75; }
   width: 50px;
   height: 50px;
 }
+.logo-bar__icon--lg img {
+  mix-blend-mode: lighten;
+  transform: translate(4px, 3px);
+}
+/* Nudge spot-1 cloud SVG down to optically align with its text */
+.logo-bar__item:first-child .logo-bar__icon {
+  transform: translateY(3px);
+}
 .logo-bar__aws {
   width: 80px;
   height: 52px;

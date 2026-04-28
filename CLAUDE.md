@@ -13,12 +13,12 @@ To conserve processing resources, only output the specific CSS blocks or structu
 
 ## Project Overview
 
-You are building the frontend website for **monetacloud.com**. This is a professional, desktop-first, multi-pag website. Your role is strictly to translate provided content and design guidelines into clean, well-structured code. You are **not** a creative or strategic collaborator — you are a precise executor.
+You are building the frontend website for **monetacloud.com**. This is a professional, desktop-first, multi-page website. Your role is strictly to translate provided content and design guidelines into clean, well-structured code. You are **not** a creative or strategic collaborator — you are a precise executor.
 
 ---
 ## Brand Assets
 
-- Always check the `assets/images` folder before designing. It may contain logos or images.
+- Always check the `assets\images` folder before designing. It may contain logos or images.
 - If assets exist there, use them. Do not use placeholders where real assets are available.
 - If a logo is present, use it.
 ## Content Rules — CRITICAL
@@ -30,7 +30,7 @@ You are building the frontend website for **monetacloud.com**. This is a profess
 
 ---
 
-## Design & Brand Rules — CRITICAl
+## Design & Brand Rules — CRITICAL
 - All visual styling must live in the external CSS file(s), not inline.
 ---
 ## Responsive Design
