@@ -628,32 +628,38 @@ p  { font-size: 0.9rem; color: var(--text-2); line-height: 1.75; }
   flex-shrink: 0;
 }
 .logo-bar__icon {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   flex-shrink: 0;
 }
-.logo-bar__icon--azure { width: 34px; height: 34px; }
-.logo-bar__icon--laurel { width: 46px; height: 46px; }
-.logo-bar__aws { width: 74px; height: 37px; flex-shrink: 0; }
+.logo-bar__icon--lg {
+  width: 50px;
+  height: 50px;
+}
+.logo-bar__aws {
+  width: 80px;
+  height: 52px;
+  flex-shrink: 0;
+}
 .logo-bar__text {
   display: flex;
   flex-direction: column;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 .logo-bar__headline {
   font-family: var(--fh);
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 800;
   color: #3b9ae0;
   letter-spacing: -0.01em;
 }
 .logo-bar__sub {
   font-family: var(--fm);
-  font-size: 0.7rem;
-  color: rgba(255,255,255,0.6);
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.65);
   letter-spacing: 0.02em;
 }
-.logo-bar__azure-text {
+.logo-bar__name {
   font-family: var(--fh);
   font-size: 1rem;
   font-weight: 700;
