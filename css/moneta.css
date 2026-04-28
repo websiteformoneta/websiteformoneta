@@ -156,6 +156,7 @@ a    { text-decoration: none; color: inherit; }
   padding: 90px 0 80px; overflow: hidden;
 }
 .hero--inner { padding: 72px 0 64px; }
+.hero--inner .hero__cta-group { align-items: center; }
 .hero__content {
   position: relative; z-index: 1;
   max-width: 820px; margin: 0 auto; text-align: center;
